@@ -1,0 +1,1111 @@
+/*************************
+*                        *
+*      Zeynep Yavuz      *
+*                        *
+*************************/
+
+/*------------------------
+-  Renkler, Fontlar 
+arka plan rengi #000000
+color: #E2E2E2
+border color #664B86
+effect #BB86FC
+koyu mor için #332940
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
+------------------------*/
+
+
+   /*-------------------------/
+  /       Temel Ayarlar      /   
+ /          CSS             /
+/-------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    background-color: #000000;
+    color: #E2E2E2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300px;
+    text-rendering: optimizeLegibility;
+}
+
+/*-------------------------------------------/
+/   Yeniden Kullanılabilir Araçlar          /
+/-----------------------------------------*/
+.satir {
+
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.ozel_alan {
+    padding: 80px 0;
+}
+
+.kutu {
+    padding: 1%;
+}
+
+.alan {
+    height: 50vh;
+}
+.ara_alan {
+    height: 80vh;
+}
+
+.oz_alan {
+    height: 60vh;
+}
+
+.uz_alan {
+    height: 125vh;
+}
+
+.kisa_alan {
+    height: 10vh;
+}
+
+/*-------------------------/
+/      Fixed Menu          /
+/-------------------------*/
+#menu {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+#menu li {
+    float: left;
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 120%;
+}
+
+#menu li a {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-decoration: none;
+    color: #E2E2E2;
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #E2E2E2;
+    padding: 15px;
+    padding-bottom: 100%;
+}
+
+#menu li a.active {
+    background-color: #664B86;
+    color: #000000;
+}
+
+#menu a:hover:not(.active) {
+    background-color: #332940;
+    color: #E2E2E2;
+}
+
+#menu .logo {
+    height: 70px;
+    width: auto;
+    float: right;
+    margin-bottom: auto;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+/*-------------------------/
+/      Resim kaplama        /
+/-------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/nebula01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*/ vh variantecal horizontical /*/
+}
+
+.uzayim {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/nebula02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*/ vh variantecal horizontical /*/
+
+}
+
+.gunes_sist {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/gunessistemi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*/ vh variantecal horizontical /*/
+
+}
+
+.kesif {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/discover_space.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.takimyildizlar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/takimyildiz.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.tutulma {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/tutulma.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hakkinda {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/ppnebula.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.karadelik {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/karadelik.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.teleskoplar1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/hubblekop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.gunsist01 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/gunessistemi01.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.aytutulma {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/aytutulma.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.meteoryag {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/meteoryag.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+
+.kapla1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/parlayanuzay.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/purplespace.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/ppnebula.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/eart01.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/nebula03.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/kaplabiri.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/tutulma01.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/uzay02.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/infinity.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/karadelik1.gif);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/karadelik2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.kapla12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/stephenhole.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.andromeda {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/andromeda.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.orion {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/orion.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.aquila {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/aquila.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.ursa_major {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/ursa_major.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.beyazkap {
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.morkap {
+    background-color: #BB86FC;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.koyumorkap {
+    background-color: #332940;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.tele1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/hubble1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.tele2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/kepler1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.tele3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/uzayistasyon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.tele4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/apollo11.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+/*-------------------------/
+/      Resim Gezegenler    /
+/-------------------------*/
+.gunes1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/redsun.gif);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.merkur1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/merkur0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.venus1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/venus0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.dunya1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/dunya0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.mars1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/mars0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.jupiter1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/jupiter0.gif);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.saturn1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/saturn01.gif);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.uranus1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/uranus0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.neptun1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/neptun0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.gun1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/gunes1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gun2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/gunes2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gun3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/gunes3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gun4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/redsun.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mer1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/merkur1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mer2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url(../img/merkur2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mer3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/merkur03.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mer4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/merkur4.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ven1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/venus1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ven2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/venus2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ven3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/venus3.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ven4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/venus4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.dun1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/dunya1.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.dun2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/dunya2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.dun3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/dunya4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.dun4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/dunya3.png);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mar1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/mars1.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mar2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/mars2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mar3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/mars3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.mar4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/mars4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.jup1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/jupiter1.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.jup2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/jupiter2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.jup3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/jupiter3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.jup4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/jupiter4.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.sat1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/saturn1.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.sat2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/saturn2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.sat3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/saturn3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.sat4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/saturn4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ura1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/uranus1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ura2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/uranus2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ura3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/uranus3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.ura4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/uranus4.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.nep1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/neptun1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.nep2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/neptun2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.nep3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/neptun3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.nep4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/neptun4.gif);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+/*-------------------------/
+/      Resim Galaksiler    /
+/-------------------------*/
+.galaksiler1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/gunsist01.gif);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.gal1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/gal1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/abellgalaxi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/AM0644.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/andromedagalaksi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/antengalaksisi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/Aquariusgalaxi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.gal7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/samanyolugalaksisi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+
+/*-------------------------/
+/      Resim Nebulalar    /
+/-------------------------*/
+.nebulalar1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/ppnebula.gif);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.nebu1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/mysticnebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/bernardnebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/doublenebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/baloncuknebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/ringnebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/ghostnebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.nebu7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../img/eaglenebula.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+/*-------------------------/
+/     Header Menu ve yazı  /
+/-------------------------*/
+
+.headnav {
+    float: right;
+    list-style: none;
+    margin-top: 150px;
+    margin-right: 40px;
+}
+
+.headnav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.headnav li a {
+    text-decoration: none;
+    color: #E2E2E2;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.icerde {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 120px;
+    margin-left: 10px;
+
+}
+
+.headnav li a:link,
+.headnav li a:visited {
+    color: #E2E2E2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+
+}
+
+.headnav li a:hover,
+.headnav li a.active {
+    border-bottom: 3px solid #664B86;
+}
+
+.header_text {
+    position: absolute;
+    width: 1000px;
+    top: 70%;
+    margin-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+/*-------------------------/
+/          Butonlar        /
+/-------------------------*/
+.btn {
+    position: absolute;
+    margin-top: 450px;
+    padding: 10px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    margin-left: 100px;
+    padding: 12px 36px;
+    font-weight: 400px;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-main:link,
+.btn-main:visited {
+    background-color: #332940;
+    color: #E2E2E2;
+    margin-right: 15px;
+    border: 2px solid #664B86;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid #664B86;
+    color: #BB86FC;
+    margin-left: 260px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #BB86FC;
+    color: #E2E2E2;
+    text-align: justify;
+
+}
+
+/*-------------------------/
+/       Başlıklar          /
+/-------------------------*/
+.ortala {
+
+    font-size: 150%;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #332940;
+    content: "";
+    width: 530px;
+    margin: 20px auto;
+}
+
+h4 {
+    color: #BB86FC;
+    font-size: 110%;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+a h2 {
+    text-align: center;
+    font-size: 150%;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #BB86FC;
+}
+
+/*-------------------------/
+/         section          /
+/-------------------------*/
+.metin {
+    line-height: 145%;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+    font-weight: 300px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.metin a {
+    text-decoration: none;
+    color: #E2E2E2;
+}
+
+.bolmet {
+    line-height: 145%;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+    font-weight: 300px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bolmet a {
+    text-decoration: none;
+    color: #E2E2E2;
+    border-bottom: 1px solid #fff;
+}
+
+/*-------------------------/
+/        Yazılı Resim     /
+/-------------------------*/
+.res_ic {
+    padding-top: 250px;
+    margin-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.res_ic1 {
+    padding-top: 150px;
+    margin-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.yazar {
+    padding: 15px;
+    margin-left: 60%;
+    text-align: left;
+    font-weight: 300px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.detay {
+    padding: 35px;
+    margin-top: 150px;
+    margin-left: 60%;
+    text-align: left;
+    font-weight: 300px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*-----------------/
+/   Tablolar      /
+/---------------*/
+.morlu {
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 3px solid #332940;
+    color: #E2E2E2;
+}
+
+.morlu th,
+td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid #332940;
+}
+
+.morlu tr:nth-child(even) {
+    background-color: #332940;
+}
+
+.morlu a {
+    color: #BB86FC;
+    font-size: 20px;
+}
+
+.morlu a:hover {
+    color: #664B86;
+    font-size: 20px;
+}
+
+/*-----------------/
+/    İKONLAR      /
+/---------------*/
+ion-icon {
+    font-size: 60px;
+    display: block;
+    color: #BB86FC;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+/*-----------------/
+/    SES Duzeni   /
+/---------------*/
+audio {
+    position: fixed;
+    z-index: 2;
+    top: 90%;
+    left: 35%;
+    width: 250px;
+}
+
+.aualt {
+    position: fixed;
+    z-index: 2;
+    top: 96%;
+    left: 35%;
+    width: 250px;
+    text-align: center;
+}
+
+/*-----------------/
+/  Tutulma Sayacı  /
+/---------------*/
+.kalan {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 40px;
+}
+
+.sayacim {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 300px;
+}
+
+/*-------------------------/
+/          Footer          /
+/-------------------------*/
+
+footer {
+    background-color: #111;
+}
+
+.fson {
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    height: 10vh;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 5px;
+
+}
